@@ -1,0 +1,53 @@
+nav{
+    font-size: 14px;
+}
+nav ul li a{
+    padding: 10px 30px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+header h1{
+    font-size: 30px;
+}
+@media(max-width:375px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    nav h1{
+        margin-left: 20px;
+    }
+    nav ul li a{
+        padding: 0px 20px;
+    }
+    main{
+        width: 100%;
+    }
+    header  h1{
+        font-size: 20px;
+    }
+    header h1 > h1{
+        font-size: 15px;
+    }
+    .navbar h1{
+        font-size: 15px;
+    }
+    .flex-items > div {
+        padding: 20px;
+    }
+    .flex-items > div a{
+        text-decoration: none;
+        color: green;
+        font-size: 15px;
+    }
+    .flex-items > div p{
+        font-size: 15px;
+    }
+    .icons {
+        padding:0px
+    }
+
+}

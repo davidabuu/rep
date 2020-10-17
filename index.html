@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="mobile.css">
+</head>
+<body>
+    <main>
+    <nav class="navbar">
+        <h1>CORE TM Resturant Website</h1>
+         <ul>
+             <li><a href="" class="current">HOME</a></li>
+             <li><a href="#about">ABOUT</a></li>
+             <li><a href="">EMAIL</a></li>
+         </ul>
+     </nav>
+     <header>
+         <h1>Welcome to CORE TM Resturant</h1>
+         <h2>Food that will satisfy your taste</h2>
+         <a href="">Read More</a>
+     </header>
+     </main>
+     <section class="icons bg-light">
+         <div id="about"></div>
+         <div class="flex-items">
+            <div>
+              <i class="fas fa-utensils fa-2x"></i>
+              <div>
+                <a href="">TASTY FOOD</a>
+                <p>
+                  Food that will satisfy your hunger and will make you 
+                  not to be hungry.
+                </p>
+              </div>
+            </div>
+            <div>
+              <i class="fas fa-concierge-bell fa-2x"></i>
+              <div>
+                <a href="">HEALTHY FOOD</a>
+                <p>
+                  We give you the best food in town and will be healthy to your body.
+                </p>
+              </div>
+            </div>
+            <div>
+              <i class="fas fa-hamburger fa-2x"></i>
+              <div>
+                <a href="">SNACKS</a>
+                <p>
+                  We have the best snacks you can think of and they are cheap.
+                </p>
+              </div>
+            </div>
+          </div>
+     </section>
+     <footer>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+        <p>COPYRIGHT &copy;2020- CORE TM</p>
+    </footer>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+         $('.navbar a, .btn').on('click', function (e) {
+        if (this.hash !== '') {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+    </script>
+</body>
+</html>
