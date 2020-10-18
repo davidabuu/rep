@@ -13,18 +13,20 @@ header h1{
     font-size: 30px;
 }
 @media(max-width:375px){
-    *{
-        padding: 0px;
-        margin: 0px;
-    }
     nav h1{
-        margin-left: 20px;
+        margin-left: 10px;
     }
     nav ul li a{
         padding: 0px 20px;
     }
     main{
+        background-image: url('./img/0b934e_761a5a97e57540c2a9a94a875da0a91d_mv2.jpg');
+        background-size: cover;
+        background-attachment: fixed ;
         width: 100%;
+        height: 100vh;
+        background-position: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
     header  h1{
         font-size: 20px;
@@ -47,7 +49,89 @@ header h1{
         font-size: 15px;
     }
     .icons {
-        padding:0px
+        padding:20px
     }
+    footer a{
+        color: white;
+       padding-left: 20px;
+     }
+
+}
+@media(max-width:360px){
+    nav h1{
+        margin-left: 0px;
+    }
+    nav ul li a{
+        padding: 0px 20px;
+    }
+    header h1 > h1{
+        font-size: 15px;
+    }
+    .navbar h1{
+        font-size: 15px;
+    }
+    .flex-items > div {
+        padding: 10px;
+    }
+    .flex-items > div a{
+        text-decoration: none;
+        color: green;
+        font-size: 15px;
+    }
+    .flex-items > div p{
+        font-size: 15px;
+    }
+    .icons {
+        padding:15px;
+    }
+    footer a{
+        color: white;
+       padding-left: 20px;
+     }
+
+}
+@media(max-width:411px){
+    nav h1{
+        margin-left: 10px;
+    }
+    nav ul li a{
+        padding: 0px 20px;
+    }
+    main{
+        background-image: url('./img/0b934e_761a5a97e57540c2a9a94a875da0a91d_mv2.jpg');
+        background-size: cover;
+        background-attachment: fixed ;
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    header  h1{
+        font-size: 20px;
+    }
+    header h1 > h1{
+        font-size: 15px;
+    }
+    .navbar h1{
+        font-size: 15px;
+    }
+    .flex-items > div {
+        padding: 20px;
+    }
+    .flex-items > div a{
+        text-decoration: none;
+        color: green;
+        font-size: 15px;
+    }
+    .flex-items > div p{
+        font-size: 15px;
+    }
+    .icons {
+        padding:15px
+    }
+    footer a{
+        color: white;
+       padding-left: 20px;
+     }
 
 }
