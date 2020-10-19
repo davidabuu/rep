@@ -116,7 +116,7 @@ header h1{
         font-size: 15px;
     }
     .flex-items > div {
-        padding: 20px;
+        padding: 10px;
     }
     .flex-items > div a{
         text-decoration: none;
@@ -133,5 +133,24 @@ header h1{
         color: white;
        padding-left: 20px;
      }
+     body::before{
+        height: 100vh;
+        background: rgba(0,0,0,0.4);
+        overflow: hidden;
+    }
 
+}
+@media(max-width:500px){
+    .flex-items > div p{
+        font-size: 25px;
+    }
+    /* The footer */
+    .flex-items > div {
+        padding: 10px;
+    }
+    body::before{
+        height: 100vh;
+        background: rgba(0,0,0,0.4);
+        overflow: hidden;
+    }
 }
