@@ -38,7 +38,7 @@ header h1{
         font-size: 15px;
     }
     .flex-items > div {
-        padding: 20px;
+        padding: 15px;
     }
     .flex-items > div a{
         text-decoration: none;
@@ -46,7 +46,7 @@ header h1{
         font-size: 15px;
     }
     .flex-items > div p{
-        font-size: 15px;
+        font-size: 20px;
     }
     .icons {
         padding:20px
@@ -57,7 +57,7 @@ header h1{
      }
 
 }
-@media(max-width:360px){
+@media(max-width:370px) and (min-width:360px){
     nav h1{
         margin-left: 0px;
     }
@@ -84,13 +84,13 @@ header h1{
     .icons {
         padding:15px;
     }
-    footer a{
+     footer a{
         color: white;
        padding-left: 20px;
      }
 
 }
-@media(max-width:411px){
+ @media(max-width:411px){
     nav h1{
         margin-left: 10px;
     }
@@ -116,7 +116,7 @@ header h1{
         font-size: 15px;
     }
     .flex-items > div {
-        padding: 10px;
+        padding: 15px;
     }
     .flex-items > div a{
         text-decoration: none;
@@ -139,8 +139,8 @@ header h1{
         overflow: hidden;
     }
 
-}
-@media(max-width:500px){
+} 
+@media(max-width:500px) and (min-width:420px){
     .flex-items > div p{
         font-size: 25px;
     }
@@ -153,4 +153,4 @@ header h1{
         background: rgba(0,0,0,0.4);
         overflow: hidden;
     }
-}
+} */ */
