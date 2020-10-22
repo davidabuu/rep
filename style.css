@@ -25,6 +25,8 @@ nav{
     justify-content: space-between;
     color: white;
     opacity: 0.8;
+    position: fixed;
+    z-index: 9;
 }
 nav h1{
     text-transform: uppercase;

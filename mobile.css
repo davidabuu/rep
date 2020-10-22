@@ -12,6 +12,10 @@ header{
 header h1{
     font-size: 30px;
 }
+.flex-items > div {
+    padding: 10px;
+    overflow: hidden;
+}
 @media(max-width:375px){
     nav h1{
         margin-left: 10px;
@@ -37,19 +41,23 @@ header h1{
     .navbar h1{
         font-size: 15px;
     }
+    .flex-items {
+        display: grid;
+
+    }
     .flex-items > div {
         padding: 15px;
     }
     .flex-items > div a{
         text-decoration: none;
         color: green;
-        font-size: 15px;
+        font-size: 20px;
     }
     .flex-items > div p{
         font-size: 20px;
     }
     .icons {
-        padding:20px
+        padding:25px
     }
     footer a{
         color: white;
@@ -71,7 +79,7 @@ header h1{
         font-size: 15px;
     }
     .flex-items > div {
-        padding: 10px;
+        padding: 15px;
     }
     .flex-items > div a{
         text-decoration: none;
@@ -82,7 +90,7 @@ header h1{
         font-size: 15px;
     }
     .icons {
-        padding:15px;
+        padding:25px;
     }
      footer a{
         color: white;
@@ -90,12 +98,16 @@ header h1{
      }
 
 }
- @media(max-width:411px){
+ @media(max-width:420px){
     nav h1{
         margin-left: 10px;
     }
     nav ul li a{
         padding: 0px 20px;
+    }
+    .flex-items {
+        display: grid;
+
     }
     main{
         background-image: url('./img/0b934e_761a5a97e57540c2a9a94a875da0a91d_mv2.jpg');
@@ -121,10 +133,10 @@ header h1{
     .flex-items > div a{
         text-decoration: none;
         color: green;
-        font-size: 15px;
+        font-size: 20px;
     }
     .flex-items > div p{
-        font-size: 15px;
+        font-size: 20px;
     }
     .icons {
         padding:15px
@@ -139,18 +151,21 @@ header h1{
         overflow: hidden;
     }
 
-} 
-@media(max-width:500px) and (min-width:420px){
+}  
+@media(max-width:540px) and (min-width:420px){
     .flex-items > div p{
         font-size: 25px;
     }
     /* The footer */
-    .flex-items > div {
+     .flex-items > div {
         padding: 10px;
+    }
+    .flex-items {
+        display: grid;
     }
     body::before{
         height: 100vh;
         background: rgba(0,0,0,0.4);
         overflow: hidden;
     }
-} */ */
+} 
