@@ -10,7 +10,7 @@
       integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>CORE TM RESTURANT</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width:768px)" href="mobile.css">
 </head>
@@ -27,7 +27,7 @@
      <header>
          <h1>Welcome to CORE TM Resturant</h1>
          <h2>Food that will satisfy your taste</h2>
-         <a href="">Read More</a>
+         <a href="#about" class="read">Read More</a>
      </header>
      </main>
      <section class="icons bg-light">
@@ -36,7 +36,7 @@
             <div>
               <i class="fas fa-utensils fa-2x"></i>
               <div>
-                <a href="">TASTY FOOD</a>
+                <a href="index1.html">TASTY FOOD</a>
                 <p>
                   We have delicious meals that will make you taste for more.
                 </p>
@@ -79,6 +79,20 @@
     ></script>
     <script>
          $('.navbar a, .btn').on('click', function (e) {
+        if (this.hash !== '') {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+      $('.read, .btn').on('click', function (e) {
         if (this.hash !== '') {
           e.preventDefault();
 
