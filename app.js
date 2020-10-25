@@ -1,33 +1,23 @@
-// Getting the UI Elements
-const food = document.querySelector('.foods');
-const snack = document.querySelector('.snack');
-const both = document.querySelector('.both');
-const btn = document.querySelector('.submit');
-// Adding an event listener
-btn.addEventListener('submit', (e) => {
-    // Validaiton
-   if(food.value === '' & snack.value === '' & both.value === ''){
-    document.querySelector('.errorFood').innerHTML = 'Please fill in at least one of the input box';
-    // SET TIMEOUT
-    setTimeout(() => {
-        document.querySelector('.errorFood').remove();  
-    }, 5000);
-   }else {
-    document.querySelector('.success').innerHTML = 'Your request has been sent and we will email your shortly for confirmation';
-    // SET TIMEOUT
-    setTimeout(() => {
-        document.querySelector('.success').remove();
-    }, 10000);
-    // CLEAR FIELDS
-    clearFields();
-   }
-    e.preventDefault();
-})
+//Getting the image elements
+const images = document.querySelectorAll('.grid-items');
+images.forEach(img =>{
+    img.addEventListener('click', (e)=>{
+        e.preventDefault();
+        location.href = 'index4.html';
+    });
+});
 
-    // CLEAR FIELDS
-function clearFields(){
-   document.querySelector('.foods').value = '';
-   document.querySelector('.snack').value = '';
-   document.querySelector('.both').value = '';
-    
-}
+document.querySelector('.submit').addEventListener('click', (e)=>{
+    e.preventDefault();
+    const div = document.createElement('div');
+    div.innerHTML = '<h3>YOUR REQUEST HAS BEEN PROCESSED</h3>';
+    const head = document.querySelector('.container');
+    div.style.marginTop = '30px';
+    div.style.background = 'lightgreen';
+    div.style.width = '400px';
+    div.style.display = 'inline-block';
+    div.style.textAlign = 'center';
+    div.style.color = 'white';
+    const down = document.querySelector('.cont');
+    head.insertBefore(div, down);
+});

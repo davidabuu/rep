@@ -3,78 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resturant Website</title>
-    <link rel="stylesheet" href="sytle.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen and (max-width: 1230px" href="mobile.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="order.css">
+    <title>CORE TM - ORDER</title>
 </head>
-<body>
-    <h1 class="intro"  style="color: white;">NOTE: The price of the food or snacks will be sent to your Email directly and also a confirmation to confirm your order.</h1>
-    <div class="container">
-        <div class="center">
-        <h1 class="order">PLACE AN ORDER</h1>
-        <div class="errorFood"></div>
-        <div class="success"></div>
-        <div class="pad">
-            <label for="">FOOD</label>
-            <input type="text" class="foods">
-            <br><br>
-            <label for="">SNACK</label>
-            <input type="text" class="snack">
-            <div class="errorSnack"></div>
-            <br>
-            <label for="">BOTH(food & snacks)</label>
-            <input type="text" class="both">
-        </div>
-        <br><br>
-        <form action="" class="submit">
-            <button type="submit" class="send" style="background-color: red;">ORDER</button>
-        </form>
-    </div>
-    </div>
-    <div class="divs">
-        <footer class="footer">
-            <div class="block">
-                <a href="" class="bluee">HOME</a>
-                <ul class="list">
-                    <li>Check our home page</li>
-                    <li>Know more about us</li>
-                    <li>Be our number 1 customer</li>
-                </ul>
-                </div>
-                <div class="block">
-            <a href="" class="bluee" id="ab">ABOUT</a>
-            <ul class="list" id="about">
-                <li>Want to know more of us</li>
-                <li>More about our foods</li>
-                <li>Check it out</li>
-            </ul>
-        </div>
-        <div class="block">
-        <a href="" class="bluee" id="contact">CONTACT</a>
-        <ul class="list" id="lis-contact">
-            <li>Still having issues</li>
-            <li>Having problems</li>
-            <li>You can contact us</li>
-        </ul>
-        </div>
-        <div class="block">
-            <a href="" class="bluee" id="email">EMAIL</a>
-            <ul class="list" id="lis">
-                <li>You can email us</li>
-                <li>And know more about us</li>
-                <li>More information</li>
-            </ul>
-        </div>
-    </div>
-    <div class="black">
-      <div class="cen">
-        <h3 class="copy">My Website &copy;2020</h3>
-      </div>
-    </div>
+<nav class="navbar">
+  <h1>CORE TM</h1>
+   <ul>
+       <li><a href="index.html" class="current">HOME</a></li>
+       <li> <a href="#about">ABOUT</a></li>
+       <li><a href="mailto:davidabu80@gmail.com">EMAIL</a></li>
+   </ul>
+</nav>
+<div class="container">
+<div class="orders">
+<header class="order">
+PLACE AN ORDER
+</div>
+<div class="cont"></div>
+<form action="" class="submit">
+    <button type="submit" class="send">ORDER</button>
+</form>
+</div>
+</section>
+<footer>
+  <div class="social">
+    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+    <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+ </div>
+  <p>COPYRIGHT &copy;2020- CORE TM</p>
 </footer>
 <script src="app.js"></script>
+<body>
 </body>
 </html>

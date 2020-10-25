@@ -173,3 +173,9 @@ section{
         color: white;
     }
 }
+
+@media(max-width:670px) and (min-width:600px){
+      section{
+          margin-left: 30px;
+      }
+    }
