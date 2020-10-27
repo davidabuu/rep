@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
 }
 main{
     background-image: url('./img/0b934e_761a5a97e57540c2a9a94a875da0a91d_mv2.jpg');
@@ -13,7 +13,7 @@ main{
     width: 100%;
     height: 100vh;
     background-position: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 nav{
     display: flex;
@@ -119,7 +119,7 @@ section{
     font-size: 25px;
 }
 .flex-items > div a:hover{
-    color: coral;
+    color: rgb(5, 20, 43);
 }
 .flex-items > div p{
     font-size: 20px;
@@ -139,7 +139,14 @@ section{
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 15px;
+    cursor: pointer;
 }
+.icons i:hover{
+    background-color: lightseagreen;
+    color: #fff;
+    transform: scale(1.3);
+}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -156,4 +163,22 @@ footer a:hover{
 }
 footer p{
     padding-top: 10px;
+}
+/* About */
+.about{
+    background-color: rgb(180, 32, 32);
+    overflow: hidden;
+
+}
+section{
+    overflow: hidden;
+}
+.about h1{
+    color: #fff;
+    font-size: 50px;
+}
+.about p{
+    font-size: 30px;
+    text-align: center;
+    padding: 1rem;
 }
