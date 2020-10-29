@@ -1,10 +1,9 @@
 *{
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
 }
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
 }
 main{
     background-image: url('./img/0b934e_761a5a97e57540c2a9a94a875da0a91d_mv2.jpg');
@@ -13,7 +12,6 @@ main{
     width: 100%;
     height: 100%;
     background-position: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 footer > div {
     padding: 15px;
@@ -108,7 +106,7 @@ section{
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
     grid-gap: 0.5rem;
-    margin-left: 40px;
+    margin-left: 70px;
     margin-top: 15px;
 }
 section .grid-items{

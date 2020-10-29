@@ -1,7 +1,6 @@
 *{
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -25,7 +24,6 @@ nav{
     justify-content: space-between;
     color: white;
     opacity: 0.8;
-    position: fixed;
     z-index: 9;
 }
 nav h1{
