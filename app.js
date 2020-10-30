@@ -1,23 +1,55 @@
-//Getting the image elements
-const images = document.querySelectorAll('.grid-items');
-images.forEach(img =>{
-    img.addEventListener('click', (e)=>{
-        e.preventDefault();
-        location.href = 'index4.html';
-    });
-});
 
-document.querySelector('.submit').addEventListener('click', (e)=>{
+//Getting the UI elements
+const food = document.querySelector('.food'),
+      email = document.querySelector('.email'),
+      name = document.querySelector('.name');
+
+
+//Get the button and add event listeners
+const btn = document.querySelector('.submit');
+btn.addEventListener('click', (e)=>{
     e.preventDefault();
-    const div = document.createElement('div');
-    div.innerHTML = '<h3>YOUR REQUEST HAS BEEN PROCESSED</h3>';
-    const head = document.querySelector('.container');
-    div.style.marginTop = '30px';
-    div.style.background = 'lightgreen';
-    div.style.width = '400px';
-    div.style.display = 'inline-block';
-    div.style.textAlign = 'center';
-    div.style.color = 'white';
-    const down = document.querySelector('.cont');
-    head.insertBefore(div, down);
-});
+    if(food.value === ''|| email.value === '' || name.value === ''){
+        //ShowError
+        showError('Please Input All Fields', 'error');
+    }else{
+        //Show Success
+        showSuccess('Your Order was succesful', 'success');
+         //Clear All Fields
+         food.value = '';
+         email.value = '';
+         name.value = '';
+        document.querySelector('.error').remove();
+    }
+    //Create a new Element for the validaiton
+    function showError(msg, className){
+        //Clear any error left
+        clearAlert();
+        const div = document.createElement('div');
+        div.className = `${className}`
+        div.appendChild(document.createTextNode(msg));
+        const form = document.querySelector('.form');
+        const message = document.querySelector('.msg');
+        form.insertBefore(div, message);
+    }
+    function showSuccess(msg, className){
+        //Clear any remaining success alert
+        clearAlert();
+        const div = document.createElement('div');
+        div.className = `${className}`
+        div.appendChild(document.createTextNode(msg));
+        const form = document.querySelector('.form');
+        const message = document.querySelector('.msg');
+        form.insertBefore(div, message);
+    }
+    function clearAlert(){
+        const clearMsg = document.querySelector('.error');
+        if(clearMsg){
+            clearMsg.remove();
+        } 
+        const clearSuccess = document.querySelector('.success');
+        if(clearSuccess){
+            clearSuccess.remove();
+        } 
+    }
+})
