@@ -19,6 +19,12 @@ header h1{
     padding: 10px;
     overflow: hidden;
 }
+header a{
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
 @media(max-width:375px){
     nav h1{
         margin-left: 10px;
