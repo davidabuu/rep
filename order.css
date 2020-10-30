@@ -45,6 +45,24 @@ nav ul li a:hover{
     color: black;
     background-color: coral;
 }
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    margin-top: 50px;
+}
+footer a{
+   color: white;
+  padding-left: 50px;
+}
+footer a:hover{
+    color: #28a745;
+}
+footer p{
+    padding-top: 10px;
+}
 
 body::before{
     content: '';
@@ -127,7 +145,20 @@ button:hover{
 }
 
 /* RESPONSIVENESS */
-@media(max-width:500px){
+@media(max-width:1024px){
+    footer{
+        margin-top: 22rem;
+    }    
+}
+@media(max-width:768px){
+    footer{
+        margin-top: 13rem;
+    }    
+}
+@media(max-width:540px){
+    footer{
+        margin-top: 8rem;
+    }    
     nav h1{
         margin-left: 10px;
         font-size: 20px;
@@ -173,8 +204,9 @@ button:hover{
         margin-top: 20px;
         border-radius: 0;
     }
- 
-    
+    footer{
+        margin-top: 8rem;
+    }    
 }
 @media(max-width:320px){
     nav h1{
@@ -216,24 +248,10 @@ button:hover{
     header h1{
         font-size: 20px;
     }
-}
-
-/* dfghj */
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    text-align: center;
-    margin-top: 50px;
-}
-footer a{
-   color: white;
-  padding-left: 50px;
-}
-footer a:hover{
-    color: #28a745;
-}
-footer p{
-    padding-top: 10px;
+    footer{
+        margin-top: 4rem;
+    }    
+    footer a{
+        padding-left: 30px;
+    }
 }
