@@ -101,13 +101,12 @@ header{
     position: relative;
     color: #fff;
 }
-section{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+#section-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     text-align: center;
-    grid-gap: 0.5rem;
-    margin-left: 70px;
-    margin-top: 15px;
+    flex-wrap: wrap;
 }
 section .grid-items{
     background-color: #fff;
@@ -126,11 +125,9 @@ img{
     height: 150px;
     object-fit: cover;
     margin-bottom: 10px;
+    text-align: center;
 }
 ul li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: black;
+    
+   list-style: none; 
 }
