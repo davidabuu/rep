@@ -6,3 +6,25 @@
         padding: 20px 30px;
     }
 }
+@media(max-width:380px){
+    footer a {
+        padding: 15px;
+    }
+}
+@media(max-width:336px){
+    .navbar h1{
+        margin-left: 10px;
+    }
+    .navbar ul li a{
+        padding: 20px 20px;
+    }
+}
+@media(max-width:295px){
+    .navbar h1{
+        margin-left: 10px;
+    }
+    .navbar ul li a{
+        padding: 20px 15px;
+    }
+}
+
